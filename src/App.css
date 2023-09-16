@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.layout {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.add-todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  background-color: #EEEEEE;
+  padding: 30px;
+  gap: 20px;
+}
+
+.title {
+  width: 25px;
+  font-weight: bold;
+}
+
+.input{
+  width: 200px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.addbtn {
+  background-color: teal;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
   color: white;
+  font-weight: bold;
+  margin-left: auto;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-box{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content:baseline;
+  gap: 10px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.component-style {
+  border: 4px solid teal;
+  border-radius: 12px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding : 12px 24px 24px;
+}
+
+.todo-title{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.deletebtn{
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 5px;
+  margin: 15px 10px 0px 0px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.completebtn{
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin: auto 10px auto 0px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.cancelbtn{
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin: auto 10px auto 0px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.list-title {
+  margin-left: 10px;
 }

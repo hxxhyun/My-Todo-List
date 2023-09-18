@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 
 const App = () => {
   const [workingtodo, setWorkingtodo] = useState([
-    { id: 1, title: '리액트 공부하기', detail: '리액트 기초를 공부해봅시다.' },
+    { id: 1, title: '리액트 공부하기', detail: '리액트 기초를 공부해봅시다.', isDoing: true },
   ]);
 
   const [donetodo, setDonetodo] = useState([
@@ -26,7 +26,8 @@ const App = () => {
     const newTodo = {
       id: workingtodo.length + 1,
       title: title,
-      detail: detail
+      detail: detail,
+      isDoing: true
     };
 
     setWorkingtodo([...workingtodo, newTodo]);
